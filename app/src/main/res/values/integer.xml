@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="messageButton_view">1</integer>
+    <integer name="messageButton_pos">2</integer>
+
+</resources>

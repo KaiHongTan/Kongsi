@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kongsi</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Messages</string>
+    <string name="title_notifications">Profile</string>
+    <string name="title_activity_loggedin">Home</string>
+</resources>
