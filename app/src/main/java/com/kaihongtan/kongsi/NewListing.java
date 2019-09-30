@@ -27,24 +27,18 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.HttpResponse;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.kaihongtan.kongsi.ui.home.HomeFragment;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.net.URI;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class NewListing extends AppCompatActivity {
 
-    public static final String UPLOAD_URL = "http://kaihongtan.com/images/upload.php";
-    public static final String UPLOAD_KEY = "uploadimage";
+    public static final String UPLOAD_URL = "http://kaihongtan.com/images/img_upload_to_server.php";
+    public static final String UPLOAD_KEY = "image_path";
 
     private int PICK_IMAGE_REQUEST = 1;
 
@@ -237,8 +231,9 @@ public class NewListing extends AppCompatActivity {
                 String uploadImage = getStringImage(bitmap);
 
                 HashMap<String,String> data = new HashMap<>();
-                data.put(UPLOAD_KEY, uploadImage);
-                data.put(uploadImage,getFileName(filePath));
+                data.put("image_path", uploadImage);
+                data.put("image_name", getFileName(filePath));
+                data.put("image_path", uploadImage);
 
                 String result = rh.postRequest(UPLOAD_URL,data);
                 return result;

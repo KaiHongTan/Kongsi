@@ -12,26 +12,20 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="106dp"
-        android:layout_marginEnd="61dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
         android:onClick="loadImagefromGallery"
         android:text="CHOOSE IMAGE"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/location" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="107dp"
         android:layout_height="89dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="359dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonLoadPicture"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/location" />
 
     <Button
@@ -39,51 +33,33 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="82dp"
-        android:layout_marginBottom="348dp"
+        android:layout_marginStart="64dp"
         android:onClick="uploadImage"
         android:text="UPLOAD IMAGE"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLoadPicture" />
+        app:layout_constraintTop_toBottomOf="@+id/btnChoose" />
 
     <EditText
         android:id="@+id/itemname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="148dp"
-        android:layout_marginBottom="22dp"
+        android:layout_marginStart="37dp"
         android:ems="10"
         android:hint="Item Name"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/location"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48000002" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="146dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginStart="37dp"
         android:ems="10"
         android:hint="Location"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/itemname" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
         android:id="@+id/button3"
@@ -102,35 +78,34 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginEnd="241dp"
-        android:layout_marginBottom="6dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="41dp"
         android:text="Insert Item Name*"
-        app:layout_constraintBottom_toTopOf="@+id/itemname"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginEnd="222dp"
-        android:layout_marginBottom="7dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="27dp"
         android:text="Insert Your Location*"
-        app:layout_constraintBottom_toTopOf="@+id/location"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemname" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="64dp"
         android:text="Upload Image for your Item"
-        app:layout_constraintBottom_toTopOf="@+id/btnChoose"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

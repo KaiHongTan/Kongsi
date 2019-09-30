@@ -10,8 +10,8 @@
         android:layout_width="394dp"
         android:layout_height="49dp"
 
-        android:background="@drawable/rounded_rectanglewhite"
-        android:hint="Send Message"
+        android:background="@drawable/rounded_rectanglesearch"
+        android:hint="Search"
         android:paddingStart="8dp"
         android:paddingTop="8dp"
 

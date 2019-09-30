@@ -3,6 +3,8 @@ package com.kaihongtan.kongsi.ui.home;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -40,6 +42,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
+        setHasOptionsMenu(true);
         recycler = root.findViewById(R.id.rvContacts);
         newlisting = root.findViewById(R.id.button2);
         newlisting.setOnClickListener(new View.OnClickListener() {
@@ -67,6 +70,13 @@ public class HomeFragment extends Fragment {
 
 
     }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.menu, menu);
+        return;
+    }
+
     private void loadProducts() {
 
 
